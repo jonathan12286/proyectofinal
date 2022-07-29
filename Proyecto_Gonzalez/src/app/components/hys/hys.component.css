@@ -1,0 +1,17 @@
+h1 {
+    background-color: lightskyblue;
+    padding: 20px;
+
+}
+
+.row1 {
+    background-color: lightskyblue;
+    padding: 20px;
+    display: flex;
+}
+
+.row2 {
+    background-color: lightskyblue;
+    padding: 20px;
+    display: flex;
+}
