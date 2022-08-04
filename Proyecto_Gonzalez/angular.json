@@ -22,10 +22,17 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+            
+          "styles": [
+             "node_modules/bootstrap/dist/css/bootstrap.min.css",
+               "src/styles.css"
+              ],
+
+                "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+               "node_modules/@popperjs/core/dist/umd/popper.min.js",
+                "node_modules/bootstrap/dist/js/bootstrap.min.js"
+]
           },
           "configurations": {
             "production": {
@@ -89,10 +96,15 @@
               "src/favicon.ico",
               "src/assets"
             ],
+
             "styles": [
+    
               "src/styles.css"
             ],
-            "scripts": []
+            
+            "scripts": [
+            
+            ]
           }
         }
       }
@@ -102,3 +114,4 @@
     "analytics": "be4e8850-a661-420b-bdb8-f1bcac37fe91"
   }
 }
+
