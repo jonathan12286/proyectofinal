@@ -1,8 +1,10 @@
 .row{
-    background-color: lightskyblue;
+    background-color: black;
 padding: 20px;
+color: azure;
 
 }
+
 h1{
     display: inline;
 }

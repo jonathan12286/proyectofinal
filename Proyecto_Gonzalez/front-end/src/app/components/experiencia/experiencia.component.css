@@ -1,11 +1,17 @@
 .row {
     padding: 100px;
+    color: azure;
 }
  div{   
-    background-color: lightskyblue;
+    background-color: black;
 }
 
 
 h1, h3 {
     display: inline;
+
+}
+
+td {
+    color: azure;
 }

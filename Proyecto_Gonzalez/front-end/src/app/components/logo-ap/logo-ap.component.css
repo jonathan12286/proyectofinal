@@ -2,20 +2,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight:  bolder;
+
+    
 }
 .redes {
-    margin-right: 0.5em;
+    margin-right: 1em;
+    padding: 10px;
 }
 
 #logoAp {
     width: 150px;
+    
 }
 img {
-    width: 50px;
+    width: 40px;
 }
 
 button{
     border-width: medium;
 }
 
+
 /*--- para la vista de celular ---*/
+
+
