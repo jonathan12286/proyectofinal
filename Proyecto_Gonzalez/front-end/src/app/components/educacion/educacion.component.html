@@ -1,29 +1,25 @@
 
 <div class="row" id="educacion">
-    <h1> Educacion</h1>
-    <div class="col-lg-1"></div>
-<div class="col-lg-11">
-    <ul>
-        <li>
-            <h1>Educacion 1</h1> - <h3>Años</h3>
-        </li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo ipsum mollitia minima magnam? Sed laudantium amet esse, quam adipisci error quisquam reiciendis rem iure doloribus labore nisi, incidunt necessitatibus!
-        </p>
-    </ul>
-    <ul>
-        <li>
-            <h1>Educacion 2</h1> - <h3>Años</h3>
-        </li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo ipsum mollitia minima magnam? Sed laudantium amet esse, quam adipisci error quisquam reiciendis rem iure doloribus labore nisi, incidunt necessitatibus!
-        </p>
-    </ul>
-    <ul>
-        <li>
-            <h1>Educacion 3</h1> - <h3>Años</h3>
-        </li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo ipsum mollitia minima magnam? Sed laudantium amet esse, quam adipisci error quisquam reiciendis rem iure doloribus labore nisi, incidunt necessitatibus!
-        </p>
-    </ul>
-</div>
+    <h1 class="text-info"> Educacion</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-info" routerLink="/nuevaedu" *ngIf="isLogged">
+            Nueva Educacion
+        </button>
+    </div>
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td><h3>{{Educacion.nombreE}}</h3></td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-info" routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil-square"></i> Editar</button></td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-info" (click)="delete(Educacion.id)"><i class="bi bi-x-square-fill"></i> Borrar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </div>
