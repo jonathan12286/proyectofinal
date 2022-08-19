@@ -1,9 +1,63 @@
 .container{
+ width: 100;
+ max-width: 100%;
+ margin: 0 0;
+padding: rem 0;
+left: 0;
+top: 0;
+right: 0;
+background-color: blueviolet;
+}
+
+
+.logo-nav-redes{
     display: flex;
     justify-content: space-between;
+    color: white;
     align-items: center;
-    font-weight:  bolder;
+    flex-wrap: wrap;
 
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 6px;
+}
+
+.navigation ul li a:hover{
+    background:fuchsia
+}
+
+.redesboton ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.redesboton ul li {
+    display: inline-block;
+}
+
+.redesboton ul li a {
+    display: block;
+    padding: 0.2rem 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
     
 }
 .redes {
@@ -32,7 +86,33 @@ button{
     border-width: medium;
 }
 
+.menu-icon {
+    display: none;
+}
 
 /*--- para la vista de celular ---*/
+@media (max-width:1020px){
+    .redesboton ul li a img{
+        display: none;
+    }
+
+}
 
 
+@media (max-width:856px){
+
+
+    .navigation ul {
+        display:none;
+    }
+
+
+
+
+    .redesboton ul li a img{
+        display: none;
+    }
+
+
+
+}

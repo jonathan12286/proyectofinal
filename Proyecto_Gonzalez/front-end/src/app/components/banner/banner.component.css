@@ -3,3 +3,11 @@ img {
     height: 800px;
 }
 
+
+@media (max-width:1020px){
+
+img{
+
+    height: 400px;
+}
+}
