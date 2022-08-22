@@ -14,26 +14,49 @@ div{
 
 
 
-@media (min-width: 1020px){
+@media (min-width: 1301px){
     #fotodeperfil {
         position: absolute;
         width: 15%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 5%;
-        top: 750px;
+        top: 650px;
+        
     }
 }
 
 
 
-@media (max-width:1019px){
+@media (max-width:1300px){
     #fotodeperfil{
         position: absolute;
         width: 15%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        top: 400px;
+        top: 300px;
+        left: 5%;
+    }
+}
+
+@media (max-width:800px){
+    #fotodeperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        top: 350px;
+        left: 5%;
+    }
+}
+
+@media (max-width:400px){
+    #fotodeperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        top: 170px;
         left: 5%;
     }
 }

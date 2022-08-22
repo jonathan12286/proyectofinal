@@ -7,6 +7,9 @@ left: 0;
 top: 0;
 right: 0;
 background-color: blueviolet;
+position: fixed;
+z-index: 1;
+
 }
 
 
@@ -91,7 +94,7 @@ button{
 }
 
 /*--- para la vista de celular ---*/
-@media (max-width:1020px){
+@media (max-width:1068px){
     .redesboton ul li a img{
         display: none;
     }
@@ -99,7 +102,7 @@ button{
 }
 
 
-@media (max-width:856px){
+@media (max-width:903px){
 
 
     .navigation ul {
