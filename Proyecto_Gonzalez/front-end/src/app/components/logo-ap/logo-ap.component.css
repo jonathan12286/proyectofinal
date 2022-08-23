@@ -119,3 +119,11 @@ button{
 
 
 }
+
+@media (max-width:400px) {
+
+    #logoAp {
+        width: 130px;
+        
+    }
+}
