@@ -1,6 +1,11 @@
 <div class="row" id="acerca">
+   
+        <button type="button" class="btn btn-info" routerLink="/editacercade/1" *ngIf="isLogged">
+            Editar Persona
+        </button>
+
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/yoyo.png" id="fotodeperfil"
+        <img src={{persona.img}} id="fotodeperfil"
             class="img-fluid">
         </div>
     
@@ -12,11 +17,7 @@
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
             <h1 class="text-info"><u>Acerca de</u></h1>
-             <h3>Hola, Soy jonathan Gonzalez <br>
-             Naci en Buenos aires, Argentina. vivo en Quilmes con mi esposa y mi hija.<br>
-             Actualmente Trabajo en la Fuerza Aerea Argentina en el Area de Contabilidad<br>
-             Estoy Entrando al mundo de la programacion <br>
-             Espero poder seguir aprendiendo dia a dia un poco mas</h3>
+             <h3>{{persona.descripcion}}</h3>
     </span>
     </div>
 
