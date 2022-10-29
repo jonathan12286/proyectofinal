@@ -33,9 +33,12 @@
                     accept=".jpg, .jpeg, .png">
                     <label class="form-label" for="img">Imagen</label>
                   </div>
-            
+                  
+                  <div class="imagen">
+                    <img [src]="imageService.url" width="200px">
+                  </div>
 
-     
+                  <br>
   
                 <button class="btn btn-outline-light btn-lg px-5">Modificar Persona</button>
             </form>
